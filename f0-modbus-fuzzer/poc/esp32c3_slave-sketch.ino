@@ -10,7 +10,7 @@ bool coils[8];
 void setup() {
   Serial.begin(115200);           // UART0 for debug (USB-CDC)
   ModbusSerial.begin(9600, SERIAL_8N1, 20, 21);  // UART1 for Modbus
-  //20 and 21 are the official TX and RX pin but they can also be changed shouldn't they work
+  //20 and 21 are the official TX and RX pin for the ESP32-C3 Super Mini. They can also be changed with two of the other available pins,shouldn't they work for whatever reason
   
   
   for (int i = 0; i < 10; i++) {
