@@ -10,6 +10,8 @@ bool coils[8];
 void setup() {
   Serial.begin(115200);           // UART0 for debug (USB-CDC)
   ModbusSerial.begin(9600, SERIAL_8N1, 20, 21);  // UART1 for Modbus
+  //20 and 21 are the official TX and RX pin but they can also be changed shouldn't they work
+  
   
   for (int i = 0; i < 10; i++) {
     holdingRegisters[i] = 0x1000 + i;
