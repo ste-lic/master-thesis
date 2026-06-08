@@ -38,17 +38,34 @@
 // ─── Configuration ────────────────────────────────────────────────────────────
 #define SLAVE_ID        1
 #define BAUD_RATE       9600
-#define RX_PIN          20      // ESP32-C3 GPIO20 = UART1 RX
-#define TX_PIN          21      // ESP32-C3 GPIO21 = UART1 TX
+#define RX_PIN          20      // ESP32-C3 GPIO20 = UART1 RX -  Same as datasheet
+#define TX_PIN          21      // ESP32-C3 GPIO21 = UART1 TX -  Same as datasheet
 #define NUM_REGISTERS   10      // number of holding registers
-#define MAX_FRAME_SIZE  256     // receive buffer size
+#define MAX_FRAME_SIZE  256     // receive buffer size - Max by def of MODBUS ADU
 #define FRAME_TIMEOUT_MS 10     // inter-frame gap in ms (≈3.5 char times at 9600 baud)
 
-// ─── Canary ───────────────────────────────────────────────────────────────────
-// Placed immediately after holdingRegisters[] in declaration order so that a
-// buffer overflow past the end of the array corrupts it first.
-// Value chosen to be recognisable and unlikely to appear as valid register data.
+/* 
+ * ####################################################################################################
+ * Canary
+ * ----------------------------------------------------------------------------------------------------
+ * Placed immediately after holdingRegisters[] in declaration order so that a
+ * buffer overflow past the end of the array corrupts it first.
+ * Value chosen to be recognisable and unlikely to appear as valid register data.
+ * ----------------------------------------------------------------------------------------------------
+ * ####################################################################################################
+*/
+
 #define CANARY_VALUE    0xDEADBEEF
+
+/* 
+ * ####################################################################################################
+ * Data storage
+ * ----------------------------------------------------------------------------------------------------
+ * IMPORTANT: do NOT insert any variable between holdingRegisters and canary: the overflow must reach 
+ * canary before corrupting anything else.
+ * ----------------------------------------------------------------------------------------------------
+ * ####################################################################################################
+*/
 
 // ─── Data storage ─────────────────────────────────────────────────────────────
 // IMPORTANT: do NOT insert any variable between holdingRegisters and canary.
@@ -70,6 +87,7 @@ static bool halted = false;   // set to true when canary corruption is detected
 // Source: Modbus over Serial Line Specification V1.02, §3.2.6 (Modbus-IDA, 2006).
 uint16_t crc16(const uint8_t *buf, uint16_t len) {
   uint16_t crc = 0xFFFF;
+  
   for (uint16_t i = 0; i < len; i++) {
     crc ^= (uint16_t)buf[i];
     for (uint8_t b = 0; b < 8; b++) {
