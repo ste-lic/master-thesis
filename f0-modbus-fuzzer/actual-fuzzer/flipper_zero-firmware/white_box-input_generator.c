@@ -297,7 +297,7 @@ static bool write_fuzz_results_to_file(
 }
 
 // Main FAP body -> this signature also goes in the entry point
-int32_t input_generator_3_app(void* p) {
+int32_t whitebox_input_generator_app(void* p) {
     UNUSED(p);
     
     ModbusAppState* state = malloc(sizeof(ModbusAppState));
