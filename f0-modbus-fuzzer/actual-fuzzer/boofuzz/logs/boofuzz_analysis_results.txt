@@ -1,0 +1,110 @@
+=== results01.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  33.9s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.2s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.6s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  54.8s  test_case= 135  guru_meditation   fc06_write_single_register.address_lo=13
+  + 100.5s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== results02.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  33.8s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.2s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.6s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  55.1s  test_case= 136  guru_meditation   fc06_write_single_register.address_lo=14
+  + 100.4s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== results03.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  34.0s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.4s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.7s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  55.3s  test_case= 136  guru_meditation   fc06_write_single_register.address_lo=14
+  + 100.6s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== results04.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  34.0s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.4s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.8s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  55.0s  test_case= 135  guru_meditation   fc06_write_single_register.address_lo=13
+  + 100.8s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== results05.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  34.0s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.4s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.8s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  55.0s  test_case= 135  guru_meditation   fc06_write_single_register.address_lo=13
+  + 100.8s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== results06.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  33.9s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.3s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.7s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  55.2s  test_case= 136  guru_meditation   fc06_write_single_register.address_lo=14
+  + 100.5s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== results07.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  33.9s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.3s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.7s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  55.0s  test_case= 135  guru_meditation   fc06_write_single_register.address_lo=13
+  + 100.7s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== results08.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  33.9s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.3s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.7s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  55.3s  test_case= 136  guru_meditation   fc06_write_single_register.address_lo=14
+  + 100.6s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== results09.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  33.9s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.4s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.8s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  55.0s  test_case= 135  guru_meditation   fc06_write_single_register.address_lo=13
+  + 100.7s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== results10.db ===
+Total test cases run: 333
+Coverage per request: fc03_read_holding_registers=94, fc06_write_single_register=119, fc10_write_multiple_registers=120
+Total crashes detected: 5
+  +  34.0s  test_case=  92  stack_smashing    fc03_read_holding_registers.quantity_lo=91
+  +  39.3s  test_case=  93  stack_smashing    fc03_read_holding_registers.quantity_lo=92
+  +  44.7s  test_case=  94  stack_smashing    fc03_read_holding_registers.quantity_lo=93
+  +  55.0s  test_case= 135  guru_meditation   fc06_write_single_register.address_lo=13
+  + 100.6s  test_case= 245  guru_meditation   fc10_write_multiple_registers.byte_count=4
+
+=== Reproducibility across all runs ===
+(10 run(s) analyzed)
+
+fc03_read_holding_registers.quantity_lo=91  [stack_smashing]  reproduced in 10/10 runs  discovery time 33.9s ± 0.07s
+fc03_read_holding_registers.quantity_lo=92  [stack_smashing]  reproduced in 10/10 runs  discovery time 39.3s ± 0.07s
+fc03_read_holding_registers.quantity_lo=93  [stack_smashing]  reproduced in 10/10 runs  discovery time 44.7s ± 0.07s
+fc10_write_multiple_registers.byte_count=4  [guru_meditation]  reproduced in 10/10 runs  discovery time 100.6s ± 0.12s
+fc06_write_single_register.address_lo=13  [guru_meditation]  reproduced in 6/10 runs  discovery time 55.0s ± 0.07s
+fc06_write_single_register.address_lo=14  [guru_meditation]  reproduced in 4/10 runs  discovery time 55.2s ± 0.08s
+
